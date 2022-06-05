@@ -1,15 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import background from "../../assets/background.png";
 import {
   Flex,
-  Grif,
   ThemeButton,
   ThemeImg,
   ThemeLink,
   ThemeSpan,
   ThemeTitle1,
 } from "../../Style/Globals";
-import { HomeBg } from "./style";
 
 const HomePage = () => {
   return (
@@ -31,7 +29,7 @@ const HomePage = () => {
         </ThemeButton>
       </Flex>
       <Flex height="100%">
-        <HomeBg></HomeBg>
+        <ThemeImg src={background} alt="pikachu"></ThemeImg>
       </Flex>
     </Flex>
   );

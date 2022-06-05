@@ -1,5 +1,9 @@
 .app {
-  background-image: url();
   background-position: right;
   background-repeat: no-repeat;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(207, 206, 206);
+  box-sizing: border-box;
+  background-size: contain;
 }

@@ -34,9 +34,9 @@ export const ThemeTitle2 = styled.h2`
   @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 22px;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 40px;
   color: ${(props) => props.color};
   margin: ${(props) => props.margin || "0"};
 `;
@@ -85,4 +85,21 @@ export const ThemeLink = styled(Link)`
   font-size: 16px;
   color: #fff;
   text-decoration: none;
+`;
+
+export const ThemeInput = styled.input`
+  width: ${(props) => props.width};
+  height: 75%;
+  border: none;
+  padding: 0 0.5%;
+  box-sizing: border-box;
+
+  ::placeholder {
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #999;
+  }
 `;
