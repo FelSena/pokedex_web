@@ -1,4 +1,4 @@
-import { Switch, Link, Route } from "react-router-dom";
+import { Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import ContactPage from "./components/Pages/Contact/Contact";
@@ -7,14 +7,14 @@ import PokemonsPage from "./components/Pages/Pokemons/Pokemons";
 import { Flex, Main } from "./components/Style/Globals";
 function App() {
   return (
-    <Flex direction="column" justifycontent="space-between" height="79vh">
+    <Flex direction="column" justifycontent="space-between" height="100vh">
       <Header></Header>
       <Main>
-        <Switch>
-          <Route path="/" component={HomePage} />
-          <Route path="/pokemons" component={PokemonsPage} />
-          <Route path="/contatos" component={ContactPage} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/pokemons" element={<PokemonsPage />} />
+          <Route exact path="/contato" element={<ContactPage />} />
+        </Routes>
       </Main>
     </Flex>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Flex = styled.div`
@@ -18,6 +19,17 @@ export const ThemeImg = styled.img`
   height: auto;
 `;
 
+export const ThemeTitle1 = styled.h1`
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 70px;
+  color: ${(props) => props.color};
+  margin: ${(props) => props.margin || "0"};
+`;
+
 export const ThemeTitle2 = styled.h2`
   @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
   font-family: "Roboto", sans-serif;
@@ -29,24 +41,13 @@ export const ThemeTitle2 = styled.h2`
   margin: ${(props) => props.margin || "0"};
 `;
 
-export const ThemeTitle1 = styled.h1`
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 28px;
-  line-height: 34px;
-  color: ${(props) => props.color};
-  margin: ${(props) => props.margin || "0"};
-`;
-
 export const ThemeSpan = styled.span`
   @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
   color: ${(props) => props.color};
 `;
 
@@ -56,8 +57,32 @@ export const Main = styled.main`
 `;
 
 export const ThemeButton = styled.button`
-  width: 144px;
-  heigth: 48px;
+  width: 196px;
+  height: 56px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
   background-color: #48d0b0;
   box-shadow: 0px 8px 8px -2px rgba(0, 0, 0, 0.25);
+
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+
+  &:hover {
+    background-color: #69d8be;
+  }
+`;
+
+export const ThemeLink = styled(Link)`
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
 `;
