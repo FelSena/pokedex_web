@@ -9,6 +9,7 @@ const API = axios.create({
 
 export function clearBaseUrl(url) {
   const newUrl = url.replace(BASE_URL, "");
+  return newUrl;
 }
 
 export default API;

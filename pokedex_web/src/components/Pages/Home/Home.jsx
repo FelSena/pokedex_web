@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import background from "../../assets/background.png";
 import {
   Flex,
@@ -8,6 +9,7 @@ import {
   ThemeSpan,
   ThemeTitle1,
 } from "../../Style/Globals";
+import { PikachuBox } from "./style";
 
 const HomePage = () => {
   return (
@@ -24,13 +26,13 @@ const HomePage = () => {
           Você pode saber o tipo de Pokémon, seus pontos fortes, fracos e
           habilidades.
         </ThemeSpan>
-        <ThemeButton>
-          <ThemeLink to="/pokemons">Veja os Pokemons</ThemeLink>
-        </ThemeButton>
+        <Link to="/pokemons">
+          <ThemeButton>Veja os Pokemons</ThemeButton>
+        </Link>
       </Flex>
-      <Flex height="100%">
+      <PikachuBox>
         <ThemeImg src={background} alt="pikachu"></ThemeImg>
-      </Flex>
+      </PikachuBox>
     </Flex>
   );
 };

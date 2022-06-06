@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Flex = styled.div`
@@ -75,16 +74,6 @@ export const ThemeButton = styled.button`
   &:hover {
     background-color: #69d8be;
   }
-`;
-
-export const ThemeLink = styled(Link)`
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  color: #fff;
-  text-decoration: none;
 `;
 
 export const ThemeInput = styled.input`

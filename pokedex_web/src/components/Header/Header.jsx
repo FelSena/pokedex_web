@@ -8,13 +8,22 @@ function Header() {
     <HeaderDefault>
       <ThemeImg src={logo} alt="Logo Pokemon" width="10%"></ThemeImg>
       <NavList>
-        <NavLink to="/" activeClassName="active" exact>
+        <NavLink
+          to="/"
+          className={(navData) => (navData.isActive ? "active" : "none")}
+        >
           <li>Home</li>
         </NavLink>
-        <NavLink to="/pokemons" activeClassName="active" exact>
+        <NavLink
+          to="/pokemons"
+          className={(navData) => (navData.isActive ? "active" : "none")}
+        >
           <li>Pokemons</li>
         </NavLink>
-        <NavLink to="/contato" activeClassName="active" exact>
+        <NavLink
+          to="/contato"
+          className={(navData) => (navData.isActive ? "active" : "none")}
+        >
           <li>Contato</li>
         </NavLink>
       </NavList>
